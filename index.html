@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio Website</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <!-- Header Content -->
+    <header class="main-header py-[8px] px-[10px] flex justify-between items-center">
+        <!-- Icon -->
+        <div class="logo">
+            <img src="img/Logo SDA.png" alt="Logo" class="h-[100px] w-[100px] rounded-full bg-center">
+        </div>
+
+        <!-- Navbar -->
+        <nav class="flex gap-[10px]">
+            <a href="#home-page" class="border p-[10px]">Home</a>
+            <a href="#about" class="border p-[10px]">About</a>
+            <a href="#projects" class="border p-[10px]">Projects</a>
+            <a href="#message-us" class="border p-[10px]">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home -->
+        <section id="home-page" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Welcome <span id="username"></span> to Our Website
+                </h2>
+            </header>
+
+            <p class="text-center">
+                We are a team of dedicated professionals committed to delivering high-quality services to our clients.
+            </p>
+        </section>
+
+        <hr />
+
+        <!-- Our Profile -->
+        <section id="our-profile" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Our Profile
+                </h2>
+            </header>
+        </section>
+
+        <hr />
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Portfolio
+                </h2>
+            </header>
+        </section>
+
+        <hr />
+
+        <!-- Message Us -->
+        <section id="message-us" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Message Us
+                </h2>
+            </header>
+
+            <form class="px-[16px]">
+                <label for="name-input" class="block py-[8px]">
+                    Name:
+                    <input type="text" id="name-input" class="border p-[4px] w-full" required>
+                </label>
+
+                <button type="button" onclick="validateForm();" class="border p-[4px] mt-[8px]">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <hr />
+
+    <!-- Footer Content -->
+    <footer class="text-center">
+        <p>&copy; 2025 Yama Company. All rights reserved.</p>
+    </footer>
+
+    <!-- JS External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
